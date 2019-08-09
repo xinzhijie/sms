@@ -1,0 +1,29 @@
+server:
+  port: ${cnpc.server.port}
+spring:
+  application:
+    name: esp-sms
+eureka:
+  instance:
+    instanceId: ${spring.application.name}:${eureka.instance.ip-address}:${server.port}
+    status-page-url-path: /info
+    home-page-url-path: /health
+    prefer-ip-address: true
+    # 本地开发修改
+    ip-address: ${cnpc.server.ip}
+  client:
+    serviceUrl:
+      defaultZone: ${cnpc.eureka.service.url}
+cnpc:
+  server:
+    port: ${SERVER_PORT:8010}
+    ip: ${SERVER_IP:${spring.cloud.client.ip-address}}
+  eureka:
+    service:
+      url:  http://eureka:PTRkygl413@10.27.213.167:8761/eureka/
+debug: true
+net:
+  address:
+    token: 0HM6ISelt0chhkIsIiSNh0RZB1QDJlR5YkI6IiTTV2YpZXZEJCLiUDMzlXdpx2LSRFUiojI05WdvN2YBJye
+    ip: 11.11.226.107
+    uri: /KTY_Interface/api/SendMessage/SendMessageList
