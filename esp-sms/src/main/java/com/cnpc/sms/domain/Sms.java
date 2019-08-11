@@ -6,7 +6,7 @@ import java.util.List;
 
 @Data
 public class Sms {
-    private List<String> PhoneNumber;
+    private List<String> phoneNumber;
     private String type;
-    private T t;
+    private MsgParam msgParam;
 }

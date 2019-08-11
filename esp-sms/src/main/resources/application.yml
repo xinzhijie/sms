@@ -25,5 +25,5 @@ debug: true
 net:
   address:
     token: 0HM6ISelt0chhkIsIiSNh0RZB1QDJlR5YkI6IiTTV2YpZXZEJCLiUDMzlXdpx2LSRFUiojI05WdvN2YBJye
-    ip: 11.11.226.107
+    ip: http://11.11.226.107
     uri: /KTY_Interface/api/SendMessage/SendMessageList

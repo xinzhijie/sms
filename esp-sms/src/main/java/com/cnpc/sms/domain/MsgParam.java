@@ -9,13 +9,13 @@ import java.time.LocalDateTime;
  */
 @Data
 public class MsgParam {
-    private String Year;
-    private String Count;
-    private LocalDateTime StartTime;
-    private LocalDateTime EndTime;
-    private String UserName;
-    private String CourseName;
-    private String Text;
-    private String Cause;
+    private String year;
+    private String count;
+    private LocalDateTime startTime;
+    private LocalDateTime endTime;
+    private String userName;
+    private String courseName;
+    private String text;
+    private String cause;
     private String mail;
 }
